@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Sources/mango_main.qml</file>
+    </qresource>
+</RCC>
