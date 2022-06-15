@@ -1,6 +1,6 @@
 unix {
 QMAKE_LFLAGS_RPATH =
-purge.commands = find . -iname '*~*' -exec rm -i {} \;
+purge.commands = find . -iname '*~*' -exec rm {} \;
 } else {
 purge.commands =
 }

@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
   QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
 
@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 		   &application,
 		   [url] (QObject *object, const QUrl &object_url)
 		   {
-		     if(!object && url == object_url)
-		       QCoreApplication::exit(-1);
+		     if(!object && object_url == url)
+		       QCoreApplication::exit(EXIT_FAILURE);
 		   },
 		   Qt::QueuedConnection);
   engine.load(url);
