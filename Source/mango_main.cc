@@ -28,15 +28,19 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+bool MANGO_QT6_SUPPORTED = false;
+
 int main(int argc, char *argv[])
 {
 #if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
   QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#else
+  MANGO_QT6_SUPPORTED = true;
 #endif
 
   QGuiApplication application(argc, argv);
   QQmlApplicationEngine engine;
-  const QUrl url(QStringLiteral("qrc:/Sources/mango_main.qml"));
+  const QUrl url(QStringLiteral("qrc:/Source/mango_main.qml"));
 
   QObject::connect(&engine,
 		   &QQmlApplicationEngine::objectCreated,

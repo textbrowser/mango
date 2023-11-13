@@ -13,7 +13,7 @@ QT += quick
 
 RESOURCES += Resources/mango_qml.qrc
 
-SOURCES += Sources/mango_main.cc
+SOURCES += Source/mango_main.cc
 
 TARGET = Mango
 
