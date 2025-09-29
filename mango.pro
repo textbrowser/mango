@@ -5,17 +5,14 @@ purge.commands = find . -iname '*~*' -exec rm {} \;
 purge.commands =
 }
 
-QMAKE_EXTRA_TARGETS = purge
+QMAKE_EXTRA_TARGETS      = purge
 QML_DESIGNER_IMPORT_PATH =
-QML_IMPORT_PATH =
-
-QT += quick
+QML_IMPORT_PATH          =
+QT                       += quick
 
 RESOURCES += Resources/mango_qml.qrc
-
-SOURCES += Source/mango_main.cc
-
-TARGET = Mango
+SOURCES   += Source/mango_main.cc
+TARGET    = Mango
 
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

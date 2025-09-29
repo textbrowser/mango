@@ -25,15 +25,15 @@
 ** MANGO, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Dialogs 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Dialogs
 
 ApplicationWindow
 {
     height: 480
     id: m_main_window
-    title: qsTr("Mango Internet Radio")
+    title: qsTr("Mango GPG Radio")
     visible: true
     width: 640
 
