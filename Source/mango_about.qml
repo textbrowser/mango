@@ -25,9 +25,9 @@
 ** MANGO, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import QtQuick 2.15
-import QtQuick.Controls 1.2
-import QtQuick.Dialogs 1.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Dialogs
 
 Dialog
 {
