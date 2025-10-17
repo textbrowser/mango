@@ -28,7 +28,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-bool MANGO_QT6_SUPPORTED = false;
+auto MANGO_QT6_SUPPORTED = false;
 
 int main(int argc, char *argv[])
 {
